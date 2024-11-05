@@ -1,0 +1,9 @@
+version: 4.0.80
+steps:
+  - prompt: >-
+      Click on a social media link  # Use the content of the file from the
+      environment
+    commands:
+      - command: hover-image
+        description: Facebook icon in the header
+        action: click
