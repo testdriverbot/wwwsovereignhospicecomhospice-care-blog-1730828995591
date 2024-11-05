@@ -1,0 +1,15 @@
+version: 4.0.80
+steps:
+  - prompt: Locate and fill in the newsletter subscription form.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Locate and fill in the newsletter subscription form.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Locate and fill in the newsletter subscription form.
+    commands:
+      - command: scroll-until-text
+        text: Subscribe to our Newsletter
+        direction: down
