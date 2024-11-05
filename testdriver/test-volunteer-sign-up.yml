@@ -1,0 +1,22 @@
+version: 4.0.80
+steps:
+  - prompt: Click on "Volunteer".
+    commands:
+      - command: hover-text
+        text: Volunteer
+        description: link in the header
+        action: click
+  - prompt: Assert that a sign up form shows.
+    commands:
+      - command: assert
+        expect: Sign up now!
+  - prompt: Assert that a sign up form shows.
+    commands:
+      - command: scroll-until-text
+        text: Sign Up Form
+        direction: down
+  - prompt: Assert that a sign up form shows.
+    commands:
+      - command: scroll-until-text
+        text: Sign Up
+        direction: down
