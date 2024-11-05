@@ -1,0 +1,38 @@
+version: 4.0.80
+steps:
+  - prompt: Click on "Resources".
+    commands:
+      - command: hover-text
+        text: Resources
+        description: link in the header
+        action: click
+  - prompt: Validate that resources are available for access or download.
+    commands:
+      - command: hover-text
+        text: www.va.gov
+        description: link to U.S. Department of Veterans Affairs
+        action: click
+  - prompt: Validate that resources are available for access or download.
+    commands:
+      - command: hover-text
+        text: U.S. Department of Veterans Affairs
+        description: link to U.S. Department of Veterans Affairs
+        action: click
+  - prompt: Attempt to access or download a resource.
+    commands:
+      - command: hover-text
+        text: Learn what the PACT Act means for you
+        description: link to learn more about the PACT Act
+        action: click
+  - prompt: Attempt to access or download a resource.
+    commands:
+      - command: hover-text
+        text: Learn what the PACT Act means for you
+        description: link to learn more about the PACT Act
+        action: click
+  - prompt: Attempt to access or download a resource.
+    commands:
+      - command: hover-text
+        text: Download PDF
+        description: link to download a PDF resource
+        action: click
