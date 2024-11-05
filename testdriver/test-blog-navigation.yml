@@ -1,0 +1,24 @@
+version: 4.0.80
+steps:
+  - prompt: Click on "Blog".
+    commands:
+      - command: hover-text
+        text: Blog
+        description: link in the header
+        action: click
+  - prompt: Assert that the blog page is displayed.
+    commands:
+      - command: assert
+        expect: the blog page is displayed
+  - prompt: Click on a blog post.
+    commands:
+      - command: hover-text
+        text: Discover the Benefits of Receiving Hospice Care at Home
+        description: title of the first blog post
+        action: click
+  - prompt: >-
+      Assert that the blog post content is displayed.  # Use the content of the
+      file from the environment
+    commands:
+      - command: assert
+        expect: the blog post content is displayed
