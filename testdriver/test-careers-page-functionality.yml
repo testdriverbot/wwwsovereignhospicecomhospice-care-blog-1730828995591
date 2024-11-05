@@ -1,0 +1,12 @@
+version: 4.0.80
+steps:
+  - prompt: Click on "Careers".
+    commands:
+      - command: hover-text
+        text: Careers
+        description: link in the header
+        action: click
+  - prompt: Assert that a list of job postings or application steps are shown.
+    commands:
+      - command: assert
+        expect: job postings or application steps are visible on the Careers page
